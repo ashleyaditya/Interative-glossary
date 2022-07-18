@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>filter&search</title>
+  </head>
+  <body>
+    <!--Heading  -->
+    <h1 class="align-center">Glossary</h1>
+    <!-- dropdown menu -->
+    <select id="selectClass">
+      <option value="">Select a category</option>
+      <option value="1">Class 1</option>
+      <option value="2">Class 2</option>
+      <option value="3">Class 3</option>
+      <option value="4">Class 4</option>
+      <option value="5">Class 5</option>
+      <option value="6">Class 6</option>
+      <option value="7">Class 7</option>
+      <option value="8">Class 8</option>
+    </select>
+    <!-- search bar -->
+    <div class="search-container">
+      <div class="searchWrapper">
+        <input
+          type="text"
+          id="searchBar"
+          placeholder="What are you looking for?"
+        />
+        <button type="submit" class="searchButton">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+    </div>
+    <!-- tags -->
+    <div id="buttons">
+      <button class="button-value" value="all">All</button>
+      <button class="button-value" value="general">General</button>
+      <button class="button-value" value="browser">Browser</button>
+      <button class="button-value" value="javascript">Javascript</button>
+      <button class="button-value" value="dom">DOM</button>
+      <button class="button-value" value="programming">Programming</button>
+      <button class="button-value" value="git">Git</button>
+      <button class="button-value" value="github">GitHub</button>
+      <button class="button-value" value="node">Node</button>
+      <button class="button-value" value="http">HTTP</button>
+    </div>
+
+    <ul id="glossaryList"></ul>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
